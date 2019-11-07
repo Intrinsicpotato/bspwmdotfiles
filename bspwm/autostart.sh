@@ -24,7 +24,7 @@ $HOME/.config/polybar/launch.sh &
 #Some ways to set your wallpaper besides variety or nitrogen
 #feh --bg-scale ~/.config/bspwm/wall.png &
 #feh --bg-scale /usr/share/backgrounds/arcolinux/escape-to-italy-1920x1200.jpg &
-feh --randomize --bg-fill ~/Pictures/.wallpapers/a/*.jpg ~/Pictures/.wallpapers/a/*.jpg
+feh --randomize --bg-fill ~/Pictures/.wallpapers/a/1k/*.jpg ~/Pictures/.wallpapers/a/4k/*.jpg
 #feh --randomize --bg-fill ~/Képek/*
 #feh --randomize --bg-fill ~/Dropbox/Apps/Desktoppr/*
 

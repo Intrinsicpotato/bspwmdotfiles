@@ -1,62 +1,117 @@
-#########################
-# SUPER + FUNCTION KEYS #
-#########################
 
-# Vivaldi
+
+
+#  ;====================================================================================;
+#  ;    
+#  ;                  _    _          ____            
+#  ;     _ _ _ _     / \  | |        |  _ \   _ _ _ _ 
+#  ;    (_|_|_|_)   / _ \ | |   _____| | | | (_|_|_|_)
+#  ;     _ _ _ _   / ___ \| |__|_____| |_| |  _ _ _ _ 
+#  ;    (_|_|_|_) /_/   \_\_____|    |____/  (_|_|_|_)
+#  ;    
+#  ;====================================================================================;
+
+
+#  ;====================================================================================;
+#  ;    
+#  ;         __  __  ___  _   _ ____  _____     
+#  ;     _  |  \/  |/ _ \| | | / ___|| ____|  _ 
+#  ;    (_) | |\/| | | | | | | \___ \|  _|   (_)
+#  ;     _  | |  | | |_| | |_| |___) | |___   _ 
+#  ;    (_) |_|  |_|\___/ \___/|____/|_____| (_)
+#  ;    
+#  ;====================================================================================;
+
+
+# On mouse button 1 press Alt_R+F1
+#button8
+#    xte "keydown a" "keyup a"
+
+# On mouse button 2 pause 3 seconds then press Alt_R+F2
+#button9
+#    xte "keydown v" "keyup v"
+    
+
+#  ;====================================================================================;
+#  ;    
+#  ;         ____  _   _ ____  _____ ____          
+#  ;     _  / ___|| | | |  _ \| ____|  _ \     _   
+#  ;    (_) \___ \| | | | |_) |  _| | |_) |  _| |_ 
+#  ;     _   ___) | |_| |  __/| |___|  _ <  |_   _|
+#  ;    (_) |____/ \___/|_|   |_____|_| \_\   |_|   
+#  ;                                               
+#  ;     _____ _   _ _   _  ____ _____ ___ ___  _   _   _  _________   ______      
+#  ;    |  ___| | | | \ | |/ ___|_   _|_ _/ _ \| \ | | | |/ / ____\ \ / / ___|   _ 
+#  ;    | |_  | | | |  \| | |     | |  | | | | |  \| | | ' /|  _|  \ V /\___ \  (_)
+#  ;    |  _| | |_| | |\  | |___  | |  | | |_| | |\  | | . \| |___  | |  ___) |  _ 
+#  ;    |_|    \___/|_| \_|\____| |_| |___\___/|_| \_| |_|\_\_____| |_| |____/  (_)
+#  ;    
+#  ;====================================================================================;
+
+
+# KeypassXC
 super + F1
-	vivaldi-stable
+	keepassxc
 
-# Atom
+# Veracrypt
 super + F2
-	atom
+	veracrypt
 
-#Inkscape
+# Peazip
 super + F3
-    inkscape
+	peazip
 
-#Gimp
+# Bleachbit
 super + F4
-    gimp
+	bleachbit
 
-#Meld
+# Disks
 super + F5
-    meld
+	gnome-disks
 
-#Vlc
+# Wallpaper a
 super + F6
-    vlc --video-on-top
+	feh --randomize --bg-fill ~/Pictures/.wallpapers/a/1k/*.jpg ~/Pictures/.wallpapers/a/4k/*.jpg
 
-#Virtualbox
+# Wallpaper b
 super + F7
-    virtualbox
+	feh --randomize --bg-fill ~/Pictures/.wallpapers/b/1k/*.jpg ~/Pictures/.wallpapers/b/4k/*.jpg
 
-#Thunar
+# Wallpaper c
 super + F8
-    thunar
+	feh --randomize --bg-fill ~/Pictures/.wallpapers/c/1k/*.jpg ~/Pictures/.wallpapers/c/4k/*.jpg
 
-#Evolution
+# Wallpaper d
 super + F9
-    evolution
+	feh --randomize --bg-fill ~/Pictures/.wallpapers/d/1k/*.jpg ~/Pictures/.wallpapers/d/4k/*.jpg
 
-#Spotify
+# Wallpaper e
 super + F10
-    spotify
+	feh --randomize --bg-fill ~/Pictures/.wallpapers/e/1k/*.jpg ~/Pictures/.wallpapers/e/4k/*.jpg
 
-#Rofi Fullscreen
+# Inkscape
 super + F11
-    rofi -show run -fullscreen
+	inkscape
 
-#Rofi
+# Gimp
 super + F12
-    rofi -show run
+	gimp
 
-#########################
-# SUPER + ... KEYS      #
-#########################
 
-#Atom
+#  ;====================================================================================;
+#  ;    
+#  ;         ____  _   _ ____  _____ ____                  _  _________   ______      
+#  ;     _  / ___|| | | |  _ \| ____|  _ \     _          | |/ / ____\ \ / / ___|   _ 
+#  ;    (_) \___ \| | | | |_) |  _| | |_) |  _| |_        | ' /|  _|  \ V /\___ \  (_)
+#  ;     _   ___) | |_| |  __/| |___|  _ <  |_   _|  _ _  | . \| |___  | |  ___) |  _ 
+#  ;    (_) |____/ \___/|_|   |_____|_| \_\   |_|   (_|_) |_|\_\_____| |_| |____/  (_)
+#  ;    
+#  ;====================================================================================;
+
+
+#Geany
 super + e
-    atom
+    geany
 
 #Toggle fullscreen of window
 super + f
@@ -64,7 +119,7 @@ super + f
 
 #Htop
 super + h
-    urxvt 'htop task manager' -e htop
+    gnome-terminal 'htop task manager' -e htop
 
 #music player
 super + m
@@ -79,28 +134,28 @@ super + r
     rofi-theme-selector
 
 #Urxvt
-super + t
-    urxvt
+#super + t
+#    urxvt
 
 #Pavucontrol
 super + v
     pavucontrol
 
 #Browser
-super + w
-    vivaldi-stable
+#super + w
+#    vivaldi-stable
 
 #Hide polybar
 super + y
     polybar-msg cmd toggle
 
-#Oblogout
+#Logout
 super + x
-    oblogout
+    bspc quit
 
 #Xkill
-super + Escape
-    xkill
+#super + Escape
+#    xkill
 
 #Terminal emulator
 super + Return
@@ -111,9 +166,23 @@ super + Return
 #super + KP_Enter
 #	urxvt
 
-#########################
-# SUPER + SHIFT KEYS    #
-#########################
+
+#  ;====================================================================================;
+#  ;    
+#  ;         ____  _   _ ____  _____ ____            ____  _   _ ___ _____ _____ 
+#  ;     _  / ___|| | | |  _ \| ____|  _ \     _    / ___|| | | |_ _|  ___|_   _|
+#  ;    (_) \___ \| | | | |_) |  _| | |_) |  _| |_  \___ \| |_| || || |_    | |  
+#  ;     _   ___) | |_| |  __/| |___|  _ <  |_   _|  ___) |  _  || ||  _|   | |  
+#  ;    (_) |____/ \___/|_|   |_____|_| \_\   |_|   |____/|_| |_|___|_|     |_|  
+#  ;                                                                             
+#  ;     _  _________   ______      
+#  ;    | |/ / ____\ \ / / ___|   _ 
+#  ;    | ' /|  _|  \ V /\___ \  (_)
+#  ;    | . \| |___  | |  ___) |  _ 
+#  ;    |_|\_\_____| |_| |____/  (_)
+#  ;    
+#  ;====================================================================================;
+
 
 #File-Manager
 super + shift + Return
@@ -125,9 +194,11 @@ super + shift + Return
 #	thunar
 
 
-#DMENU
+#rofi
 super + shift + d
-	dmenu_run -i -nb '#191919' -nf '#fea63c' -sb '#fea63c' -sf '#191919' -fn 'NotoMonoRegular:bold:pixelsize=14'
+	rofi -show drun -theme dmenu
+
+
 
 #Reload bspwm
 super + shift + r
@@ -137,38 +208,50 @@ super + shift + r
 super + shift + s
 	pkill -USR1 -x sxhkd
 
-#kill
+#Xkill
 super + shift + q
-	bspc node -c
+	xkill
 
 #kill
 super + q
 	bspc node -c	
 
 #Logout
-super + shift + x
-	bspc quit
+#super + shift + x
+#	bspc quit
 
 
-#########################
-# CONTROL + ALT KEYS    #
-#########################
+#  ;====================================================================================;
+#  ;         ____ ___  _   _ _____ ____   ___  _                  _    _   _____ 
+#  ;     _   / ___/ _ \| \ | |_   _|  _ \ / _ \| |        _       / \  | | |_   _|
+#  ;    (_) | |  | | | |  \| | | | | |_) | | | | |      _| |_    / _ \ | |   | |  
+#  ;     _  | |__| |_| | |\  | | | |  _ <| |_| | |___  |_   _|  / ___ \| |___| |  
+#  ;    (_)  \____\___/|_| \_| |_| |_| \_\\___/|_____|   |_|   /_/   \_\_____|_|  
+#  ;                                                                              
+#  ;     _  _________   ______      
+#  ;    | |/ / ____\ \ / / ___|   _ 
+#  ;    | ' /|  _|  \ V /\___ \  (_)
+#  ;    | . \| |___  | |  ___) |  _ 
+#  ;    |_|\_\_____| |_| |____/  (_)
+#  ;  
+#  ;====================================================================================;  
+
 
 #Xfce4-appfinder
-ctrl + alt + a
-     xfce4-appfinder
+#ctrl + alt + a
+#     xfce4-appfinder
 
 #File-Manager
-ctrl + alt + b
-     thunar
+#ctrl + alt + b
+#     thunar
 
 #Catfish
 ctrl + alt + c
      catfish
 
 #Evolution
-ctrl + alt + e
-     evolution
+#ctrl + alt + e
+#     evolution
 
 #Firefox
 ctrl + alt + f
@@ -179,8 +262,8 @@ ctrl + alt + g
      chromium -no-default-browser-check
 
 #Nitrogen
-ctrl + alt + i
-     nitrogen
+#ctrl + alt + i
+#     nitrogen
 
 #Screen-Locker
 ctrl + alt + k
@@ -195,12 +278,12 @@ ctrl + alt + o
      ~/.config/bspwm/scripts/compton-toggle.sh
 
 #Spotify
-ctrl + alt + s
-     spotify
+#ctrl + alt + s
+#     spotify
 
 #Urxvt
-ctrl + alt + t
-     urxvt
+#ctrl + alt + t
+#     urxvt
 
 #Rofi theme selector
 ctrl + alt + r
@@ -211,16 +294,16 @@ ctrl + alt + u
      pavucontrol
 
 #Vivaldi
-ctrl + alt + v
-     vivaldi-stable
+#ctrl + alt + v
+#     vivaldi-stable
 
 #Atom
-ctrl + alt + w
-     atom
+#ctrl + alt + w
+#     atom
 
 #Urxvt
-ctrl + alt + Return
-     urxvt
+#ctrl + alt + Return
+#     urxvt
 
 #Keyboard dependent
 #Urxvt
@@ -228,46 +311,52 @@ ctrl + alt + Return
 #     urxvt
 
 #pamac-manager
-ctrl + alt + p
-     pamac-manager
+#ctrl + alt + p
+#     pamac-manager
 
 
-#########################
-# ALT + ... KEYS        #
-#########################
+#  ;====================================================================================;
+#  ;    
+#  ;            _    _   _____                 _  _________   ______      
+#  ;     _     / \  | | |_   _|    _          | |/ / ____\ \ / / ___|   _ 
+#  ;    (_)   / _ \ | |   | |    _| |_        | ' /|  _|  \ V /\___ \  (_)
+#  ;     _   / ___ \| |___| |   |_   _|  _ _  | . \| |___  | |  ___) |  _ 
+#  ;    (_) /_/   \_\_____|_|     |_|   (_|_) |_|\_\_____| |_| |____/  (_)
+#  ;    
+#  ;====================================================================================;
 
 
 #Wallpaper trash
-alt + t
-    variety -t
+#alt + t
+#    variety -t
 
 #Wallpaper next
-alt + n
-    variety -n
+#alt + n
+#    variety -n
 
 #Wallpaper previous
-alt + p
-    variety -p
+#alt + p
+#    variety -p
 
 #Wallpaper favorite
-alt + f
-    variety -f
+#alt + f
+#    variety -f
 
 #Wallpaper previous
-alt + Left
-    variety -p
+#alt + Left
+#    variety -p
 
 #Wallpaper next
-alt + Right
-    variety -n
+#alt + Right
+#    variety -n
 
 #Wallpaper pause
-alt + Up
-    variety --pause
+#alt + Up
+#    variety --pause
 
 #Wallpaper resume
-alt + Down
-    variety --resume
+#alt + Down
+#    variety --resume
 
 #Gmrun
 alt + F2
@@ -284,56 +373,64 @@ alt + F3
 
 
 #Wallpaper trash
-alt + shift + t
-    variety -t && wal -i $(cat $HOME/.config/variety/wallpaper/wallpaper.jpg.txt)&
+#alt + shift + t
+#    variety -t && wal -i $(cat $HOME/.config/variety/wallpaper/wallpaper.jpg.txt)&
 
 #Wallpaper next
-alt + shift + n
-    variety -n && wal -i $(cat $HOME/.config/variety/wallpaper/wallpaper.jpg.txt)&
+#alt + shift + n
+#    variety -n && wal -i $(cat $HOME/.config/variety/wallpaper/wallpaper.jpg.txt)&
 
 #Wallpaper previous
-alt + shift + p
-    variety -p && wal -i $(cat $HOME/.config/variety/wallpaper/wallpaper.jpg.txt)&
+#alt + shift + p
+#    variety -p && wal -i $(cat $HOME/.config/variety/wallpaper/wallpaper.jpg.txt)&
 
 #Wallpaper favorite
-alt + shift + f
-    variety -f && wal -i $(cat $HOME/.config/variety/wallpaper/wallpaper.jpg.txt)&
+#alt + shift + f
+#    variety -f && wal -i $(cat $HOME/.config/variety/wallpaper/wallpaper.jpg.txt)&
 
 #Wallpaper update
-alt + shift + u
-    wal -i $(cat $HOME/.config/variety/wallpaper/wallpaper.jpg.txt)&
+#alt + shift + u
+#    wal -i $(cat $HOME/.config/variety/wallpaper/wallpaper.jpg.txt)&
 
-#########################
-# CONTROL + SHIFT KEYS  #
-#########################
+
+#  ;====================================================================================;
+#  ;    
+#  ;          ____ ___  _   _ _____ ____   ___  _             
+#  ;     _   / ___/ _ \| \ | |_   _|  _ \ / _ \| |        _   
+#  ;    (_) | |  | | | |  \| | | | | |_) | | | | |      _| |_ 
+#  ;     _  | |__| |_| | |\  | | | |  _ <| |_| | |___  |_   _|
+#  ;    (_)  \____\___/|_| \_| |_| |_| \_\\___/|_____|   |_|  
+#  ;                                                          
+#  ;     ____  _   _ ___ _____ _____   _  _________   ______      
+#  ;    / ___|| | | |_ _|  ___|_   _| | |/ / ____\ \ / / ___|   _ 
+#  ;    \___ \| |_| || || |_    | |   | ' /|  _|  \ V /\___ \  (_)
+#  ;     ___) |  _  || ||  _|   | |   | . \| |___  | |  ___) |  _ 
+#  ;    |____/|_| |_|___|_|     |_|   |_|\_\_____| |_| |____/  (_)
+#  ;    
+#  ;====================================================================================;
+
 
 #Xcfe4-TaskManager
 ctrl + shift + Escape
     xfce4-taskmanager
+    
 
+#  ;====================================================================================;
+#  ;    
+#  ;         __  __ _   _ _   _____ ___ __  __ _____ ____ ___    _    
+#  ;     _  |  \/  | | | | | |_   _|_ _|  \/  | ____|  _ \_ _|  / \   
+#  ;    (_) | |\/| | | | | |   | |  | || |\/| |  _| | | | | |  / _ \  
+#  ;     _  | |  | | |_| | |___| |  | || |  | | |___| |_| | | / ___ \ 
+#  ;    (_) |_|  |_|\___/|_____|_| |___|_|  |_|_____|____/___/_/   \_\
+#  ;                                                                  
+#  ;     _  _________   ______      
+#  ;    | |/ / ____\ \ / / ___|   _ 
+#  ;    | ' /|  _|  \ V /\___ \  (_)
+#  ;    | . \| |___  | |  ___) |  _ 
+#  ;    |_|\_\_____| |_| |____/  (_)
+#  ;    
+#  ;====================================================================================;
 
-#########################
-#     SCREENSHOTS       #
-#########################
-
-
-
-#Scrot
-Print
-    scrot 'ArcoLinux-%Y-%m-%d-%s_screenshot_$wx$h.jpg' -e 'mv $f $$(xdg-user-dir PICTURES)'
-
-#screeenshooter
-ctrl + Print
-     xfce4-screenshooter
-
-#Gnome-Screenshot
-ctrl + shift + Print
-     gnome-screenshot -i
-
-
-#########################
-#     MULTIMEDIA KEYS   #
-#########################
 
 #Raises volume
 XF86AudioRaiseVolume
@@ -381,9 +478,51 @@ XF86MonBrightnessDown
     xbacklight -dec 10
 
 
-#########################
-# BSPWM LAYOUT KEYS     #
-#########################
+#  ;====================================================================================;
+#  ;    
+#  ;         ____   ____ ____  _____ _____ _   _ ____  _   _  ___ _____ 
+#  ;     _  / ___| / ___|  _ \| ____| ____| \ | / ___|| | | |/ _ \_   _|
+#  ;    (_) \___ \| |   | |_) |  _| |  _| |  \| \___ \| |_| | | | || |  
+#  ;     _   ___) | |___|  _ <| |___| |___| |\  |___) |  _  | |_| || |  
+#  ;    (_) |____/ \____|_| \_\_____|_____|_| \_|____/|_| |_|\___/ |_|  
+#  ;                                                                    
+#  ;     _  _________   ______      
+#  ;    | |/ / ____\ \ / / ___|   _ 
+#  ;    | ' /|  _|  \ V /\___ \  (_)
+#  ;    | . \| |___  | |  ___) |  _ 
+#  ;    |_|\_\_____| |_| |____/  (_)
+#  ;    
+#  ;====================================================================================; 
+
+
+#Scrot
+Print
+    scrot 'ArcoLinux-%Y-%m-%d-%s_screenshot_$wx$h.jpg' -e 'mv $f $$(xdg-user-dir PICTURES)'
+
+#screeenshooter
+ctrl + Print
+     xfce4-screenshooter
+
+#Gnome-Screenshot
+ctrl + shift + Print
+     gnome-screenshot -i
+     
+
+#  ;====================================================================================;
+#  ;         ____ ____  ______        ____  __   _        _ __   _____  _   _ _____ 
+#  ;     _  | __ ) ___||  _ \ \      / /  \/  | | |      / \\ \ / / _ \| | | |_   _|
+#  ;    (_) |  _ \___ \| |_) \ \ /\ / /| |\/| | | |     / _ \\ V / | | | | | | | |  
+#  ;     _  | |_) |__) |  __/ \ V  V / | |  | | | |___ / ___ \| || |_| | |_| | | |  
+#  ;    (_) |____/____/|_|     \_/\_/  |_|  |_| |_____/_/   \_\_| \___/ \___/  |_|  
+#  ;                                                                                
+#  ;     _  _________   ______      
+#  ;    | |/ / ____\ \ / / ___|   _ 
+#  ;    | ' /|  _|  \ V /\___ \  (_)
+#  ;    | . \| |___  | |  ___) |  _ 
+#  ;    |_|\_\_____| |_| |____/  (_)
+#  ;    
+#  ;====================================================================================;
+
 
 #azerty keyboard layout for numbers 1-10
 #{ampersand,eacute,quotedbl,apostrophe,parenleft,section,egrave,exclam,ccedilla,agrave}
